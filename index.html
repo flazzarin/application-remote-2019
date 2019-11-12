@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Solution for Technigo Coding Challenge</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+<body>
+  <!-- YOUR CODE GOES HERE: -->
+  <div>
+  <h1>What are CSS BREAKPOINTS?</h1>
+  <p>Breakpoints are a very useful feature of CSS you can use to your advantage when creating a responsive webpage.</br></br>
+    Breakpoints can be based on device or content. It is recommended that you set them according to your content, because devices come and go
+    and ideally you would like to make your page last longer than the lifespan of devices.</br></br>
+    Let's say you want your page to look differently on different devices, your tablet and your smartphone, for instance.
+    Assuming your tablet is an iPad and it has a resolution of 2048x1536 pixels distributed over 9.7 inches (and you use
+    it on <a href="https://www.computeraideddesignguide.com/screen-setups-landscape-vs-portrait-cad/"> landscape</a> mode)
+    and your smartphone's screen has a resolution of 1080x1920 (and you like using it on portrait mode). When you put them side by side
+     they would look like this:</br></br>
+     </p>
+     <img src="ipad2018vsgalaxys5.jpg" alt="size comparison of iPad 2018 and a Samsung Galaxy S5 phone">
+     <p><i>(When using Chrome or Firefox press CTRL+SHIFT+i (CMD+SHIFT+i on Macs) to go into developer tools preview, and try resizing the page
+       to see how the content responds to new viewport sizes)</i>
+     <p> The image above was styled with the following CSS code:
+     </p>
+     <code><pre>img {
+         align-items: center;
+         max-width: 100%;
+         height: auto;
+         border-radius: 15px;
+       }
+     </pre></code>
+
+    <p>
+      Since the viewports are different in size and pixel density it is best if you define breakpoints in your style sheet, so the browser knows
+      when to display your page elements side by side, or stack them (if you're using grids). In sum, you can make the elements on your page behave
+      differently based on the device or screen orientation that the user is viewing it, or, even better, the size of the viewport.</br></br>
+    </p>
+    <p> You can set your page to have many columns when showing on a desktop computer or as a single column on mobile:
+    </p>
+    <code><pre>/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}</code></pre>
+<p>And it would look something like this on desktop and mobile respectively:
+</p>
+<img src="rwd_desktop.png" alt ="sample layout of a webpage displayed on desktop">
+<img src="rwd_phone.png" alt ="sample layout of a webpage displayed on desktop">
+<p>Other examples of breakpoints:</p>
+    <code><pre>@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}</pre></code></br>
+          <p> or </p></br>
+          <pre><code>.img-container {
+                width:auto;
+                text-align:center;
+                padding:20px;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }</pre></code>;
+
+    <h2>Sources</h2>
+    <ul>
+      <li><a href="https://mobiledevicesize.com/compare/#988,417;1"> Device size comparison</a></li>
+      <li><a href="https://www.freecodecamp.org/news/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862/"> The 100% correct way to do CSS breakpoints</a></li>
+      <li><a href="https://getflywheel.com/layout/css-breakpoints-responsive-design-how-to/">How to use CSS breakpoints to create responsive designs</a></li>
+      <li><a href="https://responsivedesign.is/strategy/page-layout/defining-breakpoints/">Defining Breakpoints</a></li>
+      <li><a href="https://www.w3schools.com/css/css_rwd_mediaqueries.asp"> Responsive Web Design - Media Queries</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design"> Responsive design @ MDN</a></li>
+    </ul>
+
+  </p>
+</div>
+</body>
+
+</html>

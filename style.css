@@ -1,0 +1,54 @@
+/* Example styling of a h1 element */
+
+body {
+  font-size: 100%;
+  background-color: #091626;
+}
+div {
+  font-family: Sans-serif, Verdana, Arial;
+  max-width: 75%;
+  margin: 3% 3% 3% 3%;
+  padding: 2em 2em 2em 2em;
+  border-radius: 2em;
+  background-color: #291240;
+}
+p{
+  color: #04BF9D;
+  font-size: 1.5em;
+  text-align: justify;
+}
+a {
+  color: #A545BF;
+}
+h1 {
+  padding: 1em;
+  text-align: center;
+  font-size: 2.5em;
+  color: #F24B4B;
+}
+h2 {
+  text-align: center;
+  font-size: 2em;
+  color: #F24B4B;
+}
+
+img {
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+pre {
+  color: #FFFFFF;
+  font-size: 1.5em;
+  margin: 2%;
+  padding: 2em 2em 2em 2em;
+  border-radius: 2em;
+  background-color: #091626;
+}
+li {
+  font-family: Sans-serif, Verdana, Arial;
+  background-color: #291240;
+  font-size: 1.5em;
+}
